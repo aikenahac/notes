@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_year_subjects",
+  "info": {
+    "displayName": "subject",
+    "icon": "notes-medical"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "professor": {
+      "type": "string"
+    },
+    "notebook": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schools",
+  "info": {
+    "singularName": "school",
+    "pluralName": "schools",
+    "displayName": "School",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "years": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::year.year",
+      "mappedBy": "school"
+    }
+  }
+}
