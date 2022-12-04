@@ -13,7 +13,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="grid">
       {schools?.map((s) => (
         <SchoolCard key={s.attributes.name} s={s} />
       ))}

@@ -15,7 +15,9 @@ const SchoolCard: FC<{ s: School }> = ({ s }) => {
         <h2 className="card-title">{s.attributes.name}</h2>
         <p></p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Go there</button>
+          <a className="btn btn-primary" href={`/school/${s.id}`}>
+            Go there
+          </a>
         </div>
       </div>
     </div>

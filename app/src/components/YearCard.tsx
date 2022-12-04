@@ -9,7 +9,9 @@ const YearCard: FC<{ y: Year }> = ({ y }) => {
         <h2 className="card-title">{y.attributes.year}. letnik</h2>
         <p></p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Go there</button>
+          <a className="btn btn-primary" href={`/year/${y.id}`}>
+            Go there
+          </a>
         </div>
       </div>
     </div>

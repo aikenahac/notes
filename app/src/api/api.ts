@@ -13,8 +13,16 @@ export default class API {
     return resp.data.data;
   }
 
-  static async getYears(): Promise<Year[]> {
-    const resp = await axios.get<{ data: Year[] }>('/schools?populate=*');
+  static async getSchoolYears(id: string): Promise<Year[]> {
+    const resp = await axios.get<{ data: School }>(
+      `/schools/${id}?populate[years][populate]=%2A`,
+    );
+
+    return resp.data.data.attributes.years.data;
+  }
+
+  static async getYear(id: string): Promise<Year> {
+    const resp = await axios.get<{ data: Year }>(`/years/${id}?populate=*`);
 
     return resp.data.data;
   }
