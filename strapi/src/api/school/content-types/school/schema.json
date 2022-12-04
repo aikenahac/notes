@@ -20,6 +20,13 @@
       "relation": "oneToMany",
       "target": "api::year.year",
       "mappedBy": "school"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
