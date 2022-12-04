@@ -2,7 +2,8 @@
   "collectionName": "components_year_subjects",
   "info": {
     "displayName": "subject",
-    "icon": "notes-medical"
+    "icon": "notes-medical",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,11 +14,7 @@
       "type": "string"
     },
     "notebook": {
-      "allowedTypes": [
-        "files"
-      ],
-      "type": "media",
-      "multiple": false
+      "type": "string"
     }
   }
 }
